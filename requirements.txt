@@ -1,0 +1,12 @@
+streamlit
+scikit-learn==1.5.2
+nltk>=3.8.1
+svgling
+pandas
+numpy
+ipykernel
+scikeras
+gensim
+tensorboard
+matplotlib
+tensorflow==2.17.1
