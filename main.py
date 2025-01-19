@@ -11,8 +11,12 @@ word_index = imdb.get_word_index()
 #reverse the key, value of the word index above
 reversed_word_index = {value : key for key, value in word_index.items()}
 
-#load model
-model = load_model('simple_rnn_imdb.h5')
+try:
+    #load model
+    model = load_model('simple_rnn_imdb.h5')
+except Exception as e:
+    st.error(f"Error loading model")
+    st.stop()
 
 
 #output dimension
