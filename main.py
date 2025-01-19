@@ -61,22 +61,3 @@ else:
     st.write("Please enter a review")
 
 
-# Test reviews
-test_reviews = [
-    "This movie was fantastic! The acting was superb and the plot was engaging throughout.",
-    "Terrible waste of time. Bad acting, poor script, awful direction.",
-    "It was okay, not great but not bad either.",
-]
-
-def test_model():
-    print("Testing sentiment analysis model...\n")
-    
-    for i, review in enumerate(test_reviews, 1):
-        print(f"Test Review #{i}:")
-        print(f"Text: {review}")
-        sentiment, score = predict_sentiment(review)
-        print(f"Predicted Sentiment: {sentiment}")
-        print(f"Confidence Score: {score:.4f}\n")
-
-if __name__ == "__main__":
-    test_model()
