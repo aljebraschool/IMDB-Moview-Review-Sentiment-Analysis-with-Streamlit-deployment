@@ -65,5 +65,5 @@ if user_input:
         if sentiment is not None:
             st.write("Predicted Sentiment:", sentiment)
             st.write(f"Confidence Score: {prediction_score:.4f}\n")
-    else:
-        st.write("Please enter a review")
+else:
+    st.error("Please enter a review")
